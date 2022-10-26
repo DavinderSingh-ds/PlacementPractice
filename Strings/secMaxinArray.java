@@ -3,13 +3,12 @@ public class secMaxinArray {
         int max = arr[0];
         int secMax = -1;     
         for(int i=1;i<n;i++){
-            if(max < arr[i]){
+            if(max<arr[i]){ 
                 secMax = max;
                 max = arr[i];
-            }else if( secMax < arr[i] && arr[i] != max){
+            }else if(secMax < arr[i] && arr[i] != max){
                 secMax = arr[i];
             }
-
         }
         return secMax;
     }
